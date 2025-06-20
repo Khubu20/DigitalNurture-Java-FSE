@@ -1,34 +1,67 @@
-Java Deep Skilling – Week 1
-This directory contains hands-on implementations from the DigitalNurture Java FSE Deep Skilling Program.
+📘 Java Deep Skilling – Week 1
+This directory contains hands-on implementations from the DigitalNurture Java FSE Deep Skilling Program (Week 1). It includes both creational design patterns and basic data structures & algorithm exercises.
 
-🔹 Design Patterns – Creational (Part of Week 1)
+🔹 Design Patterns – Creational
 🧩 Singleton Pattern
 📄 Main.java
 
-Ensures one instance of a class
-Uses private constructor, static instance & lazy initialization
-Output:
+Ensures only one instance of a class exists
+
+Uses:
+
+Private constructor
+
+Static instance
+
+Lazy initialization
+
+✅ Output:
 Singleton instance created. Hello from Singleton! true
+
 
 🧩 Factory Method Pattern
 📄 Factory.java
 
-Creates objects without exposing logic
-Interface: Shape, Factory: ShapeFactory, Classes: Circle, Rectangle
-Output:
+Allows object creation without exposing creation logic
+
+Uses:
+
+Interface: Shape
+
+Factory: ShapeFactory
+
+Concrete Classes: Circle, Rectangle
+
+✅ Output:
+
+mathematica
+Copy
+Edit
 Drawing Circle...
 Drawing Rectangle...
+🔹 Data Structures & Algorithms:
 
-🔹 Data Structures & Algorithms (Part of Week 1)
-📦 Ecommerce Search
+📦 E-commerce Search
 📄 SearchExample.java
 
+Features:
+
 Search products by Name (Binary), ID (Linear), or Category
-Uses array, loops, Comparator, and Scanner input
+
+Uses arrays, loops, custom comparator, and Scanner for input
+
 🌱 Financial Forecast
 📄 Forecast.java
 
 Calculates future value using recursion
-Based on initial amount, growth rate, and years
-Example:
+
+Inputs:
+
+Initial amount
+
+Annual growth rate
+
+Time (in years)
+
+✅ Example Output:
 Future value after 5 years: ₹16105.10
