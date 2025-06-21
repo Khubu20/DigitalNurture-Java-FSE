@@ -1,67 +1,66 @@
-📘 Java Deep Skilling – Week 1
-This directory contains hands-on implementations from the DigitalNurture Java FSE Deep Skilling Program (Week 1). It includes both creational design patterns and basic data structures & algorithm exercises.
 
-🔹 Design Patterns – Creational
-🧩 Singleton Pattern
-📄 Main.java
+---
 
-Ensures only one instance of a class exists
+### 🔹 Data Structures & Algorithms
 
-Uses:
+#### 📦 E-commerce Product Search
+📄 `SearchExample.java`  
+Implements multiple search strategies in a simulated e-commerce setting.
 
-Private constructor
+**Features:**
+- Binary Search: Search by Name
+- Linear Search: Search by ID
+- Filter: Search by Category
 
-Static instance
+**Technologies:**
+- Arrays, Loops
+- Custom Comparators
+- Scanner for CLI interaction
 
-Lazy initialization
+---
 
-✅ Output:
-Singleton instance created. Hello from Singleton! true
+#### 🌱 Financial Forecast Calculator
+📄 `Forecast.java`  
+Calculates compound future value using recursion.
 
+**Inputs:**
+- Initial Amount
+- Annual Growth Rate
+- Time (Years)
 
-🧩 Factory Method Pattern
-📄 Factory.java
-
-Allows object creation without exposing creation logic
-
-Uses:
-
-Interface: Shape
-
-Factory: ShapeFactory
-
-Concrete Classes: Circle, Rectangle
-
-✅ Output:
-
-mathematica
-Copy
-Edit
+✅ **Sample Output:**
 Drawing Circle...
 Drawing Rectangle...
-🔹 Data Structures & Algorithms:
 
-📦 E-commerce Search
-📄 SearchExample.java
 
-Features:
+---
 
-Search products by Name (Binary), ID (Linear), or Category
+### 🔹 Data Structures & Algorithms
 
-Uses arrays, loops, custom comparator, and Scanner for input
+#### 📦 E-commerce Product Search
+📄 `SearchExample.java`  
+Implements multiple search strategies in a simulated e-commerce setting.
 
-🌱 Financial Forecast
-📄 Forecast.java
+**Features:**
+- Binary Search: Search by Name  
+- Linear Search: Search by ID  
+- Filter: Search by Category  
 
-Calculates future value using recursion
+**Technologies Used:**
+- Arrays and loops  
+- Custom comparator logic  
+- Scanner for CLI input  
 
-Inputs:
+---
 
-Initial amount
+#### 🌱 Financial Forecast Calculator
+📄 `Forecast.java`  
+Calculates compound future value using recursion.
 
-Annual growth rate
+**Inputs:**
+- Initial Amount  
+- Annual Growth Rate  
+- Time (Years)  
 
-Time (in years)
-
-✅ Example Output:
+✅ **Sample Output:**
 Future value after 5 years: ₹16105.10
