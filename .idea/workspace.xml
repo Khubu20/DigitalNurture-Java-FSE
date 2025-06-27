@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6008594d-9fbe-45d9-bdbd-4ebbb6dd9b54" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week1_Design Pattern/2.FactoryMethodPattern/Code/ControlStructure.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week1_Design Pattern/2.FactoryMethodPattern/Code/ControlStructures" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week1_Design Pattern/2.FactoryMethodPattern/Code/create_tables.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week1_Design Pattern/2.FactoryMethodPattern/Code/exercise1_discount.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week1_Design Pattern/2.FactoryMethodPattern/Code/insert_data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/1_SetJUnit 3_Assertion/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/1_SetJUnit 3_Assertion/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/1_SetJUnit 3_Assertion/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/1_SetJUnit 3_Assertion/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/1_SetJUnit 3_Assertion/OUTPUT_1/Screenshot (20).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/1_SetJUnit 3_Assertion/OUTPUT_3/Screenshot (21).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/1_SetJUnit 3_Assertion/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/1_SetJUnit 3_Assertion/src/main/java/com/javaCode/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/1_SetJUnit 3_Assertion/src/test/java/in/cog/bean/test/AssertionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/1_SetJUnit 3_Assertion/src/test/java/in/cog/bean/test/TestCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/4_AAA/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/4_AAA/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/4_AAA/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/4_AAA/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/4_AAA/OUTPUT/Screenshot (24).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/4_AAA/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/4_AAA/src/main/java/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_JUnit_Basic Testing Exercises/4_AAA/src/test/java/CalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/1_ControlStrcture/Scenerio1.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/1_ControlStrcture/Scenerio2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/1_ControlStrcture/Scenerio3.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/1_ControlStrcture/create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/1_ControlStrcture/insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/1_ControlStrcture/query.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio1/Output/Screenshot (16).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio1/SampleTable.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio1/execute.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio1/insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio1/procedure.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio1/query.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio2/CoustomerBonus.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio2/Employee.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio2/Execute.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio2/Query.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio2/insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio3/create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week2_PL_SQL/2_StoredProcedure/Scenerio3/update.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2_PLSQL_Exercise/1.Control Structures/PL_SQL_ControlStrcuture" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Khubu20"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Khubu20/DigitalNurture-Java-FSE.git",
+    "accountId": "021089d2-6f8f-4222-ab8c-fac55915a6fa"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2z6CrD5dQhCL2maGeg2z86SiItv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/user/Desktop/DIGITALNURTURE-Java-FSE",
+    "settings.editor.selected.configurable": "vcs.Git"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6008594d-9fbe-45d9-bdbd-4ebbb6dd9b54" name="Changes" comment="" />
+      <created>1751042332334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751042332334</updated>
+    </task>
+    <servers />
+  </component>
+</project>
