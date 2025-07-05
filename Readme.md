@@ -139,3 +139,113 @@ You want to ensure that a particular method is called with specific arguments du
 
 ---
 
+
+## 🗂 Week 3 Overview
+Hands-on with **Spring Core**, **Maven**, and **Spring Data JPA**.
+
+---
+
+## ✅ Exercise 1: Spring Core Setup
+
+- Create Maven project `LibraryManagement`
+- Add Spring Core dependencies in `pom.xml`
+- Create `applicationContext.xml` in `src/main/resources`
+- Define beans: `BookService`, `BookRepository`
+- Create classes:
+  - `com.library.service.BookService`
+  - `com.library.repository.BookRepository`
+- Load Spring context in main class to test setup
+
+---
+
+## ✅ Exercise 2: Dependency Injection
+
+- Wire `BookRepository` into `BookService` via XML
+- Add setter in `BookService`
+- Test using main class
+
+---
+
+## 🧪 Spring Data JPA
+
+### Setup
+
+- Tools: MySQL, Eclipse, Maven
+- Spring Initializr: Group `com.cognizant`, Artifact `orm-learn`
+- Dependencies: Spring Data JPA, DevTools, MySQL Driver
+- DB: Create schema `ormlearn`
+
+```sql
+CREATE SCHEMA ormlearn;
+
+application.properties
+
+spring.datasource.url=jdbc:mysql://localhost:3306/ormlearn
+spring.datasource.username=root
+spring.datasource.password=root
+spring.jpa.hibernate.ddl-auto=validate
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+
+
+---
+
+📦 Entity & Repository
+
+Country.java
+
+@Entity
+@Table(name = "country")
+public class Country {
+    @Id @Column(name = "code") private String code;
+    @Column(name = "name") private String name;
+    // Getters, Setters, toString()
+}
+
+CountryRepository.java
+
+@Repository
+public interface CountryRepository extends JpaRepository<Country, String> {}
+
+CountryService.java
+
+@Service
+public class CountryService {
+    @Autowired private CountryRepository countryRepo;
+
+    @Transactional
+    public List<Country> getAllCountries() {
+        return countryRepo.findAll();
+    }
+}
+
+
+---
+
+🔎 Testing
+
+@SpringBootApplication
+public class OrmLearnApplication {
+    private static CountryService countryService;
+
+    public static void main(String[] args) {
+        ApplicationContext context = SpringApplication.run(...);
+        countryService = context.getBean(CountryService.class);
+        testGetAllCountries();
+    }
+
+    private static void testGetAllCountries() {
+        List<Country> countries = countryService.getAllCountries();
+        System.out.println(countries);
+    }
+}
+
+
+---
+
+🔄 JPA vs Hibernate vs Spring Data JPA
+
+Feature	JPA	Hibernate	Spring Data JPA
+
+Type	Spec (JSR 338)	ORM Tool	Abstraction over JPA
+Boilerplate	❌	❌	✅
+Impl	Interface	Full Impl	Needs Hibernate
