@@ -250,7 +250,7 @@ Type	Spec (JSR 338)	ORM Tool	Abstraction over JPA
 Boilerplate	❌	❌	✅
 Impl	Interface	Full Impl	Needs Hibernate
 
-
+---
 
 # ✅ Week 4 – Spring REST, JWT Authentication & Advanced REST Concepts
 
