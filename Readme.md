@@ -185,14 +185,14 @@ spring.datasource.username=root
 spring.datasource.password=root
 spring.jpa.hibernate.ddl-auto=validate
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
-
+```
 
 ---
 
-📦 Entity & Repository
+## 📦 Entity & Repository
 
-Country.java
-
+### Country.java
+```java
 @Entity
 @Table(name = "country")
 public class Country {
@@ -200,14 +200,16 @@ public class Country {
     @Column(name = "name") private String name;
     // Getters, Setters, toString()
 }
+```
 
-CountryRepository.java
-
+### CountryRepository.java
+```java
 @Repository
 public interface CountryRepository extends JpaRepository<Country, String> {}
+```
 
-CountryService.java
-
+### CountryService.java
+```java
 @Service
 public class CountryService {
     @Autowired private CountryRepository countryRepo;
@@ -217,12 +219,13 @@ public class CountryService {
         return countryRepo.findAll();
     }
 }
-
+```
 
 ---
 
-🔎 Testing
+## 🔎 Testing
 
+```java
 @SpringBootApplication
 public class OrmLearnApplication {
     private static CountryService countryService;
@@ -238,17 +241,17 @@ public class OrmLearnApplication {
         System.out.println(countries);
     }
 }
-
+```
 
 ---
 
-🔄 JPA vs Hibernate vs Spring Data JPA
+## 🔄 JPA vs Hibernate vs Spring Data JPA
 
-Feature	JPA	Hibernate	Spring Data JPA
-
-Type	Spec (JSR 338)	ORM Tool	Abstraction over JPA
-Boilerplate	❌	❌	✅
-Impl	Interface	Full Impl	Needs Hibernate
+| Feature | JPA | Hibernate | Spring Data JPA |
+|--------|-----|-----------|------------------|
+| Type | Spec (JSR 338) | ORM Tool | Abstraction over JPA |
+| Boilerplate | ❌ | ❌ | ✅ |
+| Impl | Interface | Full Impl | Needs Hibernate |
 
 ---
 
@@ -375,4 +378,3 @@ curl -s -u user:pwd http://localhost:8090/authenticate
 Week 4 was about building secure, testable, and scalable REST APIs. From learning basic controllers to securing with JWT and documenting with Swagger, this week elevated backend capabilities to enterprise-level development.
 
 ✅ Successfully completed REST API development, JWT-based security, and advanced REST features in Spring Boot 3.
-
