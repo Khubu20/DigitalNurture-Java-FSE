@@ -250,7 +250,7 @@ Type	Spec (JSR 338)	ORM Tool	Abstraction over JPA
 Boilerplate	❌	❌	✅
 Impl	Interface	Full Impl	Needs Hibernate
 
-
+---
 # Java Deep Skilling – Week 4
 
 ## Spring REST Web Services
