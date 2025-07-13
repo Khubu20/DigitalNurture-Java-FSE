@@ -249,3 +249,92 @@ Feature	JPA	Hibernate	Spring Data JPA
 Type	Spec (JSR 338)	ORM Tool	Abstraction over JPA
 Boilerplate	❌	❌	✅
 Impl	Interface	Full Impl	Needs Hibernate
+
+
+# Java Deep Skilling – Week 4
+
+## Spring REST Web Services
+
+### Project Setup
+
+```bash
+# Create project via Spring Initializr
+mvn archetype:generate \
+  -DgroupId=com.cognizant \
+  -DartifactId=spring-learn \
+  -DarchetypeArtifactId=maven-archetype-quickstart \
+  -DinteractiveMode=false
+
+# Build with proxy settings
+mvn clean package \
+  -Dhttp.proxyHost=proxy.cognizant.com \
+  -Dhttp.proxyPort=6050 \
+  -Dhttps.proxyHost=proxy.cognizant.com \
+  -Dhttps.proxyPort=6050
+
+REST Endpoints
+# Hello World endpoint
+curl http://localhost:8080/hello
+
+# Get country by code
+curl http://localhost:8080/countries/IN
+
+# Sample response:
+# {
+#   "code": "IN",
+#   "name": "India"
+# }
+
+JWT Authentication
+
+# Get JWT token
+curl -s -u user:password http://localhost:8090/authenticate
+
+# Sample response:
+# {
+#   "token": "eyJhbGciOiJIUzI1NiJ9..."
+# }
+
+# Use token in requests
+curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9..." \
+  http://localhost:8090/api/secure
+
+Key Commands
+
+# Run Spring Boot application
+mvn spring-boot:run
+
+# Package application
+mvn clean package
+
+# Run tests
+mvn test
+
+Configuration Examples
+
+<!-- Sample pom.xml dependency -->
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+  <version>2.7.0</version>
+</dependency>
+
+# application.properties
+server.port=8080
+spring.datasource.url=jdbc:mysql://localhost:3306/db
+spring.datasource.username=root
+spring.datasource.password=secret
+
+Spring Boot CLI Commands
+
+# List all beans
+curl http://localhost:8080/actuator/beans
+
+# Health check
+curl http://localhost:8080/actuator/health
+
+# Environment details
+curl http://localhost:8080/actuator/env
+
+
+
