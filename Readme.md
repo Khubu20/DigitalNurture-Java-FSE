@@ -386,18 +386,6 @@ From creating simple controllers to implementing JWT-based security and explorin
 - JWT-Based Security Implementation
 - Advanced REST Features with Spring Boot 3
 
-# Week5 - Microservices
-
-## Creating Microservices for Account and Loan
-
-In this hands-on exercise, we will create two microservices for a bank:
-- One microservice for handling **accounts**
-- One for handling **loans**
-
-Each microservice will be a specific independent **Spring RESTful Web Service** Maven project, having its own `pom.xml`.
-
-Instead of combining both account and loan functionalities into a single application, we will split them into **two separate applications**. These web services will be simple and **will not connect to any backend or database**.
-
 ---
 
 # Week5 - Microservices
