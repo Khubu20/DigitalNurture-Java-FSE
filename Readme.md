@@ -186,7 +186,7 @@ spring.datasource.password=root
 spring.jpa.hibernate.ddl-auto=validate
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
 
-
+```
 ---
 
 📦 Entity & Repository
@@ -242,10 +242,197 @@ public class OrmLearnApplication {
 
 ---
 
-🔄 JPA vs Hibernate vs Spring Data JPA
+## 🔄 JPA vs Hibernate vs Spring Data JPA
 
-Feature	JPA	Hibernate	Spring Data JPA
+| Feature      | JPA             | Hibernate   | Spring Data JPA |
+|--------------|------------------|-------------|------------------|
+| Type        | Spec (JSR 338)   | ORM Tool   | Abstraction over JPA |
+| Boilerplate | ❌               | ❌         | ✅               |
+| Impl        | Interface        | Full Impl  | Needs Hibernate |
 
-Type	Spec (JSR 338)	ORM Tool	Abstraction over JPA
-Boilerplate	❌	❌	✅
-Impl	Interface	Full Impl	Needs Hibernate
+---
+
+# Week 4 – Spring REST, JWT Authentication & Advanced REST Concepts
+
+This week focused on building robust RESTful APIs using **Spring Boot 3**, securing them with **JWT authentication**, and exploring advanced concepts like **HATEOAS**, **DTOs**, **Actuator Monitoring**, and **REST API Testing & Documentation**.
+
+---
+
+## 📘 Spring Boot REST Hands-On Projects
+
+### 1️⃣ Spring REST Basics
+- **Project:** `spring-rest-handson`
+- **Tech Stack:** Java, Spring Boot 3, Maven, Eclipse
+
+#### ✅ Key Highlights:
+- Created a Spring Web project using **Spring Initializr**
+- Explored Maven Project Structure:
+  - `src/main/java`
+  - `src/test/java`
+  - `src/main/resources`
+- Understood `@SpringBootApplication` and `main()` method execution flow
+
+---
+
+### 2️⃣ Spring Core – XML Configuration
+- Configured `country.xml` using Spring Beans:
+
+```xml
+<bean id="country" class="com.cognizant.springlearn.Country">
+  <property name="code" value="IN" />
+  <property name="name" value="India" />
+</bean>
+```
+
+- Developed `Country` class with:
+  - Logging in constructor
+  - Getters and setters
+  - Debug logging inside `toString()`
+- Loaded bean using `ApplicationContext` and `ClassPathXmlApplicationContext`
+
+---
+
+### 3️⃣ Hello World REST API
+- Created a simple **GET** endpoint:
+  - **URL:** `/hello`
+  - **Response:** `"Hello World!!"`
+  - **Controller:** `HelloController.java`
+- Tested using **Postman** and browser
+- Analyzed HTTP headers via **DevTools** and **Postman**
+
+---
+
+### 4️⃣ REST - Country Web Service
+- Created `/country` endpoint to return India details
+- Loaded country data from **Spring XML** and returned as **JSON**
+
+---
+
+### 5️⃣ REST - Country Lookup by Code
+- Endpoint: `/countries/{code}` (Case-Insensitive)
+- Loaded list of countries from XML and performed lookup by code
+- Returned matching `Country` object as JSON
+
+---
+
+## 🔐 JWT Authentication – Secure REST APIs
+
+- **Project:** `jwt-handson`
+- Built a **Spring Boot JWT Authentication Service**
+
+#### ✅ Key Implementations:
+- Created **Authentication Controller**
+- Enabled **Basic Auth** using `SecurityConfig`
+- Handled `Authorization` header manually to extract credentials
+- Generated JWT tokens for valid users
+
+#### Sample cURL Test:
+```bash
+curl -s -u user:pwd http://localhost:8090/authenticate
+```
+
+#### Sample Response:
+```json
+{"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzUyMzQyMzMyLCJleHAiOjE3NTIzNDU5MzJ9.oIHQ-dj63zYKRtHhqHTfEfO0-m5fP6Y-OgB5kfcgWew"}
+```
+
+---
+
+## 🧠 Deep Dive – REST Concepts & Best Practices
+
+### ✅ Spring REST & Boot 3
+- Understood REST principles and **Spring Boot 3** highlights
+- Project setup, devtools usage, and dependency hierarchy exploration
+
+### ✅ REST Controller Design
+- Handled **GET**, **POST**, **PUT**, **DELETE** HTTP methods
+- Returned JSON responses using Spring Web
+
+### ✅ Request & Response Handling
+- Implemented:
+  - Path Variables
+  - Query Parameters
+  - Custom Headers & Status Codes
+- Applied exception handling in controllers
+
+### ✅ RESTful DTOs & Representation
+- Used **DTOs** for clean and structured API responses
+- Explored JSON serialization and versioning strategies
+
+### ✅ CRUD Operations with REST
+- Developed **Create**, **Read**, **Update**, **Delete** endpoints
+- Applied validation annotations
+- Used **Optimistic Locking** where needed
+
+### ✅ Content Negotiation
+- Supported **JSON** & **XML** responses using `Accept` header
+- Configured media types and custom format support
+
+### ✅ Spring Security & JWT
+- Secured endpoints with **JWT Authentication**
+- Configured **CORS**, Authentication, and Authorization rules
+
+---
+
+## 📅 Summary
+
+Week 4 focused on mastering the fundamentals of building secure, scalable, and testable **REST APIs** using **Spring Boot 3**.  
+From creating simple controllers to implementing JWT-based security and exploring advanced REST features, this week marked a significant step towards **Enterprise-Grade Backend Development**.
+
+---
+
+## ✅ Successfully Completed:
+- Spring REST API Development
+- JWT-Based Security Implementation
+- Advanced REST Features with Spring Boot 3
+
+# Week5 - Microservices
+
+## Creating Microservices for Account and Loan
+
+In this hands-on exercise, we will create two microservices for a bank:
+- One microservice for handling **accounts**
+- One for handling **loans**
+
+Each microservice will be a specific independent **Spring RESTful Web Service** Maven project, having its own `pom.xml`.
+
+Instead of combining both account and loan functionalities into a single application, we will split them into **two separate applications**. These web services will be simple and **will not connect to any backend or database**.
+
+---
+
+# Week5 - Microservices
+
+## Creating Microservices for Account and Loan
+
+In this hands-on exercise, we will create two microservices for a bank:
+- One microservice for handling **accounts**
+- One for handling **loans**
+
+Each microservice will be a specific independent **Spring RESTful Web Service** Maven project, having its own `pom.xml`.
+
+Instead of combining both account and loan functionalities into a single application, we will split them into **two separate applications**. These web services will be simple and **will not connect to any backend or database**.
+
+---
+
+## 🛠️ Steps to Implement the Two Microservices
+
+---
+
+### 📁 Account Microservice
+
+1. Create a folder with your **employee ID** in the `D:` drive.
+2. Inside that folder, create another folder named **`microservices`**.
+   - This will contain all your sample projects for microservices learning.
+3. Open [https://start.spring.io/](https://start.spring.io/) in your browser.
+4. Fill in the form as follows:
+   - **Group**: `com.cognizant`
+   - **Artifact**: `account`
+5. Select the following modules:
+   - `Spring Boot DevTools` under Developer Tools
+   - `Spring Web` under Web
+6. Click **Generate** and download the zip file.
+7. Extract the `account` folder from the zip and move it to the `microservices` folder.
+8. Open Command Prompt in the `account` folder and run:
+   ```bash
+   mvn clean package
+
