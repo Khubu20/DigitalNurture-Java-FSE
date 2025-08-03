@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+.office-card {
+  margin-bottom: 40px;
+}
+
+.office-image {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
