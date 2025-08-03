@@ -424,3 +424,124 @@ Instead of combining both account and loan functionalities into a single applica
    ```bash
    mvn clean package
 
+
+# 📘 Week 6 – Introduction to React & SPA
+
+This week focused on understanding **Single Page Applications (SPA)** and how **React** plays a major role in building modern web interfaces. We explored setting up a React development environment, creating components, applying styling, and understanding lifecycle methods.
+
+## 🎯 Objectives Covered
+- Define SPA and compare with MPA
+- Understand React, its working, and features
+- Learn about Virtual DOM
+- Understand React Components – Class and Functional
+- Learn about Component Lifecycle and Styling techniques
+
+## 🧪 Hands-On Labs
+
+### 🔹 Hands-On 1: My First React App
+- Created a new React app `myfirstreact` using `create-react-app`.
+- Displayed the message:
+  > Welcome to the first session of React
+- Verified app by running on: `http://localhost:3000`
+
+### 🔹 Hands-On 2: Student Management Portal (Class Components)
+- App: `StudentApp`
+- Created 3 class components: `Home`, `About`, `Contact`
+- Rendered all components from `App.js`
+
+### 🔹 Hands-On 3: Score Calculator App (Functional Component with Styling)
+- App: `scorecalculatorapp`
+- Component: `CalculateScore`
+  - Accepts `name`, `school`, `total`, `goal`
+  - Calculates and displays average score
+- Used external CSS (`mystyle.css`) for styling
+
+### 🔹 Hands-On 4: Blog App (Component Lifecycle)
+- App: `blogapp`
+- Implemented:
+  - `componentDidMount()` for fetching posts from API
+  - `componentDidCatch()` for error handling
+- Displayed fetched posts (titles and descriptions) in UI
+
+### 🔹 Hands-On 5: Cohort Dashboard Styling
+- Used a pre-built app
+- Created a CSS Module: `CohortDetails.module.css`
+- Applied:
+  - CSS classes
+  - Inline styles (e.g., color based on status)
+  - Conditional rendering (ongoing, completed)
+
+## ✅ Summary
+Week 6 provided a strong foundation in:
+- React basics
+- SPA vs MPA
+- Component creation and styling
+- Lifecycle methods and API calls
+
+Projects like **StudentApp**, **BlogApp**, and **ScoreCalculator** effectively combined theory and practical experience.
+
+---
+
+# 📘 Week 7 – Modern JavaScript (ES6) & React Concepts
+
+This week focused on exploring modern **JavaScript (ES6)** features and their integration with **React**. We used `let`, `const`, arrow functions, destructuring, ES6 classes, `Map` and `Set`, and applied them within JSX, styling, event handling, and conditional rendering in React.
+
+## 🎯 Objectives Covered
+- Learn ES6 features: `let`, `const`, arrow functions, destructuring, classes, inheritance, `map()`, `set()`
+- Understand and implement JSX
+- Style components with inline CSS
+- Apply conditional rendering and list rendering
+- Handle events using Synthetic Events
+- Use state and props to manage user interaction
+- Build apps using multiple components and event handlers
+
+## 🧪 Hands-On Labs
+
+### 🔹 Hands-On 1: Cricket App (ES6 in React)
+- App: `cricketapp`
+- Components:
+  - `ListofPlayers`: Used `map()` and arrow functions to filter players
+  - `IndianPlayers`: Used destructuring and spread operator
+- Toggled components using conditional rendering
+
+### 🔹 Hands-On 2: Office Space Rental App (JSX & Styling)
+- App: `officespacerentalapp`
+- Used JSX to:
+  - Create headings
+  - Display office images and details
+- Styled rent conditionally (₹60,000 threshold) using inline styles
+
+### 🔹 Hands-On 3: Event Handling App
+- App: `eventexamplesapp`
+- Features:
+  - Counter with `Increment` / `Decrement` buttons
+  - `Say Welcome` button with parameter
+  - Button click event using synthetic event
+- `CurrencyConvertor`:
+  - Converted INR to Euro
+  - Handled input and submit events
+
+### 🔹 Hands-On 4: Ticket Booking App (Conditional Rendering)
+- App: `ticketbookingapp`
+- Conditional views for:
+  - Guest users: View flights
+  - Logged-in users: Book tickets
+- Login/Logout toggle to switch views
+
+### 🔹 Hands-On 5: Blogger App (Advanced Conditional Rendering)
+- App: `bloggerapp`
+- Components: `BookDetails`, `BlogDetails`, `CourseDetails`
+- Used:
+  - if-else
+  - ternary operator
+  - logical `&&` for conditional rendering
+
+## ✅ Summary
+Week 7 focused on strengthening ES6 + React integration:
+- **ES6**: Arrow functions, `let`/`const`, destructuring, spread, `map`/`set`, classes
+- **React JSX**: Syntax, dynamic rendering, inline styling
+- **Event Handling**: Forms, synthetic events, passing parameters
+- **Conditional Rendering**: Toggling views based on logic
+- **Practical Implementation**: Through apps like **cricketapp**, **eventexamplesapp**, and **ticketbookingapp**
+
+---
