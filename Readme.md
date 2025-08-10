@@ -545,3 +545,63 @@ Week 7 focused on strengthening ES6 + React integration:
 - **Practical Implementation**: Through apps like **cricketapp**, **eventexamplesapp**, and **ticketbookingapp**
 
 ---
+# 📘 Week 8 – Git & GitHub Essentials
+This week focused on learning Git fundamentals, version control workflows, and integrating tools for efficient source code management. We explored Git commands, branching, merging, conflict resolution, .gitignore usage, and pushing code to remote repositories like GitHub/GitLab.
+
+## 🎯 Objectives Covered
+Learn essential Git commands:
+git init, git status, git add, git commit, git push, git pull  
+Configure Git user settings and default editor (Notepad++)  
+Create and manage repositories (local & remote)  
+Track and commit changes to Git  
+Use .gitignore to exclude unwanted files and folders  
+Understand branching and merging workflows  
+Resolve merge conflicts  
+Push and pull changes between local and remote repositories  
+Clean up branches and sync with remote  
+
+## 🧪 Hands-On Labs
+
+### 🔹 Hands-On 1: Git Setup & First Commit
+📁 Project Name: GitDemo  
+
+✅ Implemented:  
+Installed Git Bash and verified installation  
+Configured Git user name and email  
+Integrated Notepad++ as default Git editor  
+Created a local repository (git init)  
+Added a welcome.txt file and committed it with a multi-line message  
+Created a remote repository in GitLab and linked it to the local repo  
+Pushed local changes to remote using:  
+git push origin master  
+
+### 🔹 Hands-On 2: Ignoring Files with .gitignore
+✅ Implemented:  
+Created .log files and a log folder  
+Configured .gitignore to ignore .log extensions and log/ folder  
+Verified with git status that ignored files were not tracked  
+
+### 🔹 Hands-On 3: Branching & Merging
+✅ Implemented:  
+Created a new branch GitNewBranch  
+Added files and committed changes to branch  
+Switched to master and merged changes from GitNewBranch  
+Used P4Merge to visualize differences before merging  
+Deleted merged branch and verified with:  
+git branch -d GitNewBranch  
+
+### 🔹 Hands-On 4: Merge Conflict Resolution
+✅ Implemented:  
+Created a branch GitWork and added hello.xml  
+Made different changes to hello.xml in both master and GitWork  
+Merged branches to produce a merge conflict  
+Used 3-way merge tool in P4Merge to resolve conflict  
+Added backup files to .gitignore  
+Committed final resolved code and deleted the branch  
+
+### 🔹 Hands-On 5: Cleanup & Push to Remote
+✅ Implemented:  
+Verified master was in a clean state  
+Pulled latest changes from remote  
+Pushed pending changes to remote repository  
+Verified remote repository updates  
